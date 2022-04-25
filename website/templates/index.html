@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Group_21 Movie Recommendation Sys</title>
+    <meta property="og:title" content="Unlucky Celebrated Zebra" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style>
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style>
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}"/>
+  </head>
+  <body>
+    <div>
+      <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}" />
+
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <div class="home-container1">
+            <img
+              src="{{ url_for('static',filename='asu-logo-200h.png') }}"
+              alt="image"
+              class="home-image"
+            />
+          </div>
+          <div class="home-container2">
+            <nav
+              class="navigation-links-nav navigation-links-root-class-name10"
+            >
+              <a href="/team" class="home-button button">Team</a>
+            </nav>
+          </div>
+          <div class="home-btn-group">
+            <button class="home-login button">Login</button>
+            <button class="home-button button">Register</button>
+          </div>
+        </header>
+        <div class="home-hero">
+          <div class="home-container4">
+            <h1 class="home-text">Movie Recommendation System</h1>
+            <span class="home-text1">Welcome</span>
+            <div class="home-btn-group1">
+              <a href="/movie"  class="home-button button">Knn model</a>
+              <a href="/movie2" class="home-button1 button">SVD model</a>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="{{ url_for('static',filename='sunde.png') }}"
+            class="home-image2"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+.navigation-links-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-text {
+  margin-left: var(--dl-space-space-twounits);
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-text {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.movie-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-start;
+  background-image: url("wp2052134-arizona-state-wallpapers.jpg");
+  /*background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);*/
+}
+
+.movie-header {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+  background-color: #D9D9D9;
+}
+.movie-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.movie-image {
+  width: 129px;
+  height: 70px;
+  object-fit: cover;
+}
+.movie-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.movie-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 65px;
+  display: flex;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: flex-start;
+  justify-content: center;
+}
+.movie-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 65px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+.movie-text {
+  font-size: 25px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.movie-textinput {
+  width: 452px;
+  height: 54px;
+  padding: 0px;
+  align-self: center;
+}
+
+.movie-text1 {
+  color: var(--dl-color-gray-white);
+  font-size: 25px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+
+
+.movie-search {
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  margin-top: var(--dl-space-space-unit);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.movie-search:hover {
+  color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-black);
+}
+.movie-hero {
+  display: flex;
+  padding: var(--dl-space-space-sixunits);
+  position: relative;
+  margin-top: var(--dl-space-space-threeunits);
+  align-items: stretch;
+  flex-direction: column;
+  padding-bottom: 72px;
+  justify-content: space-between;
+}
+.movie-container5 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.movie-textarea {
+  width: 1035px;
+  height: 466px;
+  align-self: stretch;
+}
+@media(max-width: 991px) {
+  .movie-hero {
+    flex-direction: column;
+  }
+}
+@media(max-width: 767px) {
+  .movie-header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .movie-hero {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .movie-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .movie-hero {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

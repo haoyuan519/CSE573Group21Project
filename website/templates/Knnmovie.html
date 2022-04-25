@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>movie - movie recommendation</title>
+    <meta property="og:title" content="movie - Unlucky Celebrated Zebra" />
+    <meta property="og:title" content="Page - Unlucky Celebrated Zebra" />
+    <meta property="og:title" content="team - Unlucky Celebrated Zebra" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style>
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style>
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}"/>
+  </head>
+  <body>
+    <div>
+      <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='movie.css') }}" />
+
+      <div class="movie-container">
+        <header data-role="Header" class="movie-header">
+          <div class="movie-container1">
+            <img
+              alt="image"
+              src="{{ url_for('static',filename='asu-logo-200h.png') }}"
+              class="movie-image"
+            />
+          </div>
+            <h1>Knn Model</h1>
+          <div class="movie-container2">
+            <nav class="navigation-links-nav navigation-links-root-class-name8">
+              <a href="/" class="home-button button">Home</a>
+            </nav>
+          </div>
+        </header>
+
+
+        <div class="movie-container3">
+          <form action="http://localhost:5000/resultKnn" method="POST">
+    <span class="movie-text1">Movie ID:</span><input class="movie-textinput input" type="text" name="name"> <button class="movie-search button" type="submit">Search</button>
+</form>
+{#            <script>#}
+{#function myFunction(){#}
+{#    document.getElementById("recommandation").innerHTML = "You clicked the button, I am new paragraph.";}#}
+{#</script>#}
+        </div>
+        <div class="movie-hero">
+          <div class="movie-container5">
+            <textarea
+              id="recommandation"
+              class="movie-textarea textarea"
+            > </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
