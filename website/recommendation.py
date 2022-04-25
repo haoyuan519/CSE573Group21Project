@@ -42,7 +42,7 @@ def resultSvd():
     # for i in range(10):
     #     print(recommendations.split(", '")[i].replace("'", ''))
 
-    return render_template('movie2.html', current_movie=var['title'].to_string(index=False),
+    return render_template('test2.html', current_movie=var['title'].to_string(index=False),
                            sample_input=recommendations.split(", '")[0].replace("'", ''),
                            sample_input2=recommendations.split(", '")[1].replace("'", ''),
                            sample_input3=recommendations.split(", '")[2].replace("'", ''),
@@ -73,7 +73,7 @@ def resultKnn():
     # for i in range(10):
     #     print(recommendations.split(", '")[i].replace("'", ''))
 
-    return render_template('movie.html', current_movie=var['title'].to_string(index=False),
+    return render_template('test3.html', current_movie=var['title'].to_string(index=False),
                            sample_input=recommendations.split(", '")[0].replace("'", ''),
                            sample_input2=recommendations.split(", '")[1].replace("'", ''),
                            sample_input3=recommendations.split(", '")[2].replace("'", ''),
