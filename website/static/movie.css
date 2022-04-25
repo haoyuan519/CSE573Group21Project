@@ -210,6 +210,9 @@
   justify-content: flex-start;
   background-color: var(--dl-color-gray-white);
 }
+.movie-feature-card:hover {
+  transform: scale(1.02);
+}
 .movie-text02 {
   margin-bottom: var(--dl-space-space-twounits);
 }
